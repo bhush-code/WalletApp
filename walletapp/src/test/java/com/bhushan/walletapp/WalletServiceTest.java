@@ -108,13 +108,6 @@ public class WalletServiceTest {
 
         updateBalanceDto.setId(1);
         updateBalanceDto.setBalance(50.00);
-
-//        when(userRepository.findById(1)).thenReturn(Optional.empty());
-//        when(userRepository.save(user)).thenReturn(user);
-//        when(currencyRepository.findById(1)).thenReturn(Optional.of(currency));
-////        currencyRepository.save(currency);
-//        Currency currency1=currencyRepository.findById(1).get();
-//        walletService.createWalletAccount(user);
         when(userRepository.findById(1)).thenReturn(Optional.of(user));
         when(userRepository.save(any(User.class))).thenReturn(user);
         String result=walletService.updateBalance(updateBalanceDto);
