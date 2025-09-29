@@ -17,4 +17,15 @@ Here are some core (or intended) features:
 | Backend API / Server | Spring Boot, Embedded Tomcat |
 | Database | H2 In memory Database |
 
+# Run
+
+Install the dependencies
+```bash
+git clone https://github.com/bhush-code/WalletApp.git
+cd WalletApp
+mvn clean install 
+
+To run app locally use below command
+```bash
+mvn spring-boot:run
 
