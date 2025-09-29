@@ -25,7 +25,4 @@ git clone https://github.com/bhush-code/WalletApp.git
 cd WalletApp
 mvn clean install 
 
-To run app locally use below command
-```bash
-mvn spring-boot:run
 
